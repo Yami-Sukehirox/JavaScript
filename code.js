@@ -1,21 +1,39 @@
 const student = {
-    Name: 'Lian',
-    LastName: 'Cruspero',
-    Course: 'BSIT',
-    YearLevel: 1,
-    LovesCoding: true
+    name: 'Lian',
+    lastName: 'Cruspero',
+    course: 'BSIT',
+    yearLevel: 1,
+    lovesCoding: true
 };
 
-console.log(typeof(student.Name));
-const programmingLanguages = ['C ', 'c++ ', 'JavaScript'];
+const programmingLanguages = ['C', 'c++', 'JavaScript'];
 
 function showStudentInfo() {
 console.log('====STUDENT PROFILE====');
-console.log('Name: ' + student.Name + '' +student.LastName);
-console.log('Course:' + student.Course);
-console.log('Year Leve:'+ student.YearLevel);
-console.log('Love Coding:'+ student.LovesCoding);
+console.log('Name: ' + student.name + ' ' +student.lastName);
+console.log('Course: ' + student.course);
 
+if (student.course === 'BSIT' || 'BSCS' ){
+    console.log('IT-related student');
+}
+
+if (student.yearLevel === 1) {
+    console.log('Level: First Year');
+} else if (student.yearLevel === 2) {
+    console.log('Level: Second Year');
+} else if (student.yearLevel === 3) {
+    console.log('Level: Third Year');
+} else {
+    console.log('Level: Fourth Year');
+}
+    
+
+
+if (student.lovesCoding === true) {
+    console.log('Loves Coding: Yes!');
+} else {
+    console.log('Loves Coding: No!');
+}
 
 console.log('Programming Languages:' );
 

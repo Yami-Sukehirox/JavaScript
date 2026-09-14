@@ -118,3 +118,57 @@ function multiply(num1, num2) {
 
 console.log( multiply(3, 3));
 
+/*8. Using of the operation of javascript*/
+
+let num1 = 24;
+let num2 = 10;
+
+const isLiangwapo = num1 > num2;
+
+console.log( isLiangwapo ); // It will print or display True
+
+let sub1 = 24;
+let sub2 = 34;
+
+const howIsyourDay = sub1 <= sub2;
+
+console.log( howIsyourDay );
+
+/*9. Equality Operatos in JS*/
+
+let a = 2;
+let b = '2';
+
+console.log (a == b);
+// This a truthy dili strict.
+
+console.log (a === b);
+// This a strict.
+
+console.log(1 == '1');
+
+console.log(true == '1');
+
+/*10. Ternary Operator*/
+
+let age = 18;
+
+const canDrive = age >= 18 ? true : false;
+console.log(canDrive); // This will display a True.
+
+let money = 110;
+
+const typeCustomer = money > 100 ? 'Gold' : 'silver';
+console.log(typeCustomer); // It will display a Gold.
+
+/*11. Logical Operator*/ // ||, &&, !, ??
+console.log(true || true); // True.
+console.log(false || true );// True.
+console.log(false || false); // false.
+
+let unserChosenColor = 'red';
+let defaultColor = 'pink';
+
+const currentWebsite = userChosenColor || defaultColor;
+
+console.log(currentWebsite);
