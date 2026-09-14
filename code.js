@@ -60,6 +60,13 @@ if (student.average >= 90) {
 if (student.average >= 90 && student.lovesCoding === true) {
     console.log('Excellent student who loves coding.');
 }
+console.log('======CONGRATSSS========');
+if (student.course === 'BSIT' && student.yearLevel === 1){
+    console.log('You are a great First Year Student!');
+} else {
+    console.log('You are not a First Year student.')
+}
+
 }
 
 showStudentInfo();
