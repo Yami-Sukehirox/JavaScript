@@ -10,7 +10,7 @@ const student = {
     
 };
 
-const programmingLanguages = ['C', 'C++', 'JavaScript'];
+let programmingLanguages = ['C', 'C++', 'JavaScript'];
 
 function showStudentInfo() {
 console.log('====STUDENT PROFILE====');
@@ -57,8 +57,8 @@ console.log('===============LANGUAGES====================');
 
 console.log('Programming Languages:' );
 
-for (let i = 0; i < programmingLanguages.length; i++){
-    console.log(programmingLanguages[i]);
+for (let idx = 0; idx < programmingLanguages.length; idx++){
+    console.log(programmingLanguages[idx]);
 }
 console.log('======STUDENT GRADE SUBJECTS==========');
 

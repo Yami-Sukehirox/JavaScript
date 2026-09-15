@@ -202,5 +202,30 @@ switch (jog) {
 
     case 'Software Engineer':
         console.log('Maintain the Software');
-        break;    
+        break;
+    default:
+        console.log('WITwew');        
 }        
+
+/*15. For Loops*/
+
+let numbers = [1, 2, 3, 4, 5,];
+
+for (let idx = 0; idx < numbers.length; idx++) {
+    console.log(numbers[idx]);
+}
+
+for (let num1 = 0; num1 < 100; num1++) {
+    console.log(num1); // It display 1 to 100.
+}
+
+/*16. While loops*/
+
+let hays = ['lian', 'angelo'];
+
+let idx = 0;
+while (idx < hays.length) {
+    console.log(hays[idx]);
+
+    idx++; 
+}

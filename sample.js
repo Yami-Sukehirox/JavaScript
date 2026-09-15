@@ -1,11 +1,8 @@
-let lovesCoding = true;
+let brandLaptop = ['victus', 'asus', 'lenovo'];
 
-switch (lovesCoding) {
-    case true:
-        console.log('Loves Coding: YES!');
-        break;
-    case false:
-        console.log('Loves Coding: NO');
-        break;
+let idx = 0;
+while (idx < brandLaptop.length) {
+    console.log(brandLaptop[idx]);
+
+    idx++; 
 }
-
