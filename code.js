@@ -71,16 +71,6 @@ if (average >= 90) {
     console.log('Status: Failed');
 }
 
-
-
-
-
-
-
-
-
-
-
 if (average >= 90 && student.lovesCoding === true) {
     console.log('Excellent student who loves coding!');
 }
