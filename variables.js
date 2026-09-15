@@ -171,4 +171,22 @@ let defaultColor = 'pink';
 
 const currentWebsite = userChosenColor || defaultColor;
 
-console.log(currentWebsite);
+console.log(currentWebsite); // It will display red. || if only the chosen has '' the display wil be pink.
+
+/*12. Operator precedence*/
+
+let elsa = 5 + 5 * 8;
+console.log(elsa); // It display 45
+
+/*13. If else in JS*/
+
+let priceOfPizza = 78.9;
+let amountMoney = 90;
+
+const canBuyorNahh = amountMoney >= priceOfPizza;
+
+if (canBuyorNahh) {
+    console.log('Enjoy your Food');
+} else {
+    console.log('You have no money'); 
+} // It will display Enjoy your food

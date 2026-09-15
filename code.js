@@ -4,7 +4,10 @@ const student = {
     course: 'BSIT',
     yearLevel: 1,
     lovesCoding: true,
-    average: 98
+    mathematics: 98,
+    programming: 97,
+    algorithm: 95,
+    
 };
 
 const programmingLanguages = ['C', 'C++', 'JavaScript'];
@@ -46,19 +49,40 @@ console.log(programmingLanguages[0]);
 console.log(programmingLanguages[1]);
 console.log(programmingLanguages[2]);
 
-console.log('======STUDENT AVERAGE=========')
-console.log('Average: ' + student.average);
+console.log('======STUDENT GRADE SUBJECTS==========')
 
-if (student.average >= 90) {
+console.log('Subject MATHEMATICS: ' + student.mathematics);
+console.log('Subject PROGRAMMING: ' + student.programming);
+console.log('Subject ALGORITHM: ' + student.algorithm);
+
+const average = (
+    student.mathematics +
+    student.programming +
+    student.algorithm
+) /3;
+
+console.log('Average: ' + average);
+
+if (average >= 90) {
     console.log('Status: Excellent!');
-} else if (student.average >= 75) {
-    console.log('Status: Passed!');
+} else if (average >= 75) {
+    console.log('Status: Passed');
 } else {
-    console.log('Status: Failed!');
+    console.log('Status: Failed');
 }
 
-if (student.average >= 90 && student.lovesCoding === true) {
-    console.log('Excellent student who loves coding.');
+
+
+
+
+
+
+
+
+
+
+if (average >= 90 && student.lovesCoding === true) {
+    console.log('Excellent student who loves coding!');
 }
 console.log('======CONGRATSSS========');
 if (student.course === 'BSIT' && student.yearLevel === 1){
