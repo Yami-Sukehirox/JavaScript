@@ -45,10 +45,9 @@ console.log('===============LANGUAGES====================')
 
 console.log('Programming Languages:' );
 
-console.log(programmingLanguages[0]);
-console.log(programmingLanguages[1]);
-console.log(programmingLanguages[2]);
-
+for (let i = 0; i < programmingLanguages.length; i++){
+    console.log(programmingLanguages[i]);
+}
 console.log('======STUDENT GRADE SUBJECTS==========')
 
 console.log('Subject MATHEMATICS: ' + student.mathematics);
