@@ -56,9 +56,13 @@ function showStudentInfo() {
 
   console.log("Programming Languages:");
 
-  for (let idx = 0; idx < programmingLanguages.length; idx++) {
-    console.log(programmingLanguages[idx]);
-  }
+  let languagesIndex = 0;
+  while (languagesIndex < programmingLanguages.length) {
+    console.log('Language ' + (languagesIndex + 1) + ': ' + programmingLanguages[languagesIndex]);
+   
+    languagesIndex++;
+
+  } 
   console.log("======STUDENT GRADE SUBJECTS==========");
 
   console.log("Subject MATHEMATICS: " + student.mathematics);
@@ -87,6 +91,6 @@ function showStudentInfo() {
   } else {
     console.log("You are not a First Year student.");
   }
+  
 }
-
 showStudentInfo();
