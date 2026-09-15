@@ -229,3 +229,31 @@ while (idx < hays.length) {
 
     idx++; 
 }
+/*17. do while loops*/
+
+let i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
+
+/*17. The for in loop*/ // USING 'in'
+
+let heavy = {
+    rock: 'wow',
+    min: 2,
+    day: 4
+};
+
+for (let key in heavy) {
+    console.log(course[key]); // It will display the wow, 2, and 4.
+}
+
+/*18. The for-of loop*/  // USING 'of'
+
+let quiz = ['math', 'english', 'science'];
+
+for (let subject of quiz) {
+    console.log(quiz);
+}

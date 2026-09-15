@@ -1,8 +1,5 @@
-let brandLaptop = ['victus', 'asus', 'lenovo'];
+let device = ['realme', 'Vivo', 'apple', 'samsung'];
 
-let idx = 0;
-while (idx < brandLaptop.length) {
-    console.log(brandLaptop[idx]);
-
-    idx++; 
+for (let cellphone of device) {
+    console.log(device);
 }
