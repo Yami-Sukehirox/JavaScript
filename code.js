@@ -20,35 +20,47 @@ console.log('===================================')
 if (student.course === 'BSIT' || student.course === 'BSCS' ){
     console.log('IT-related student');
 }
-console.log('========================YEAR LEVEL==========================')
-if (student.course === 'BSIT' && student.yearLevel === 1) {
-    console.log('Level: First Year BSIT STUDENT');
-} else if (student.course === 'BSIT' && student.yearLevel === 2) {
-    console.log('Level: Second Year BSIT STUDENT');
-    } else if (student.course === 'BSIT' && student.yearLevel === 3) {
-        console.log('Level: Third Year BSIT STUDENT');
-} else {
-    console.log('Level: Fourth Year BSIT STUDENT');
+console.log('========================YEAR LEVEL==========================');
+
+switch (student.yearLevel) {
+    case 1:
+        console.log('Year Level: First Year');
+        break;
+    case 2:
+        console.log('Year Level: Second Year');
+        break;
+    case 3:
+        console.log('Year Level: Third Year');
+        break;
+    case 4: 
+        console.log('Year Level: Fourth Year');
+        break;
+    default:
+        console.log('You are not a student');                
+} 
+
+console.log('===========================');
+switch (student.lovesCoding) {
+    case true:
+        console.log('Loves Coding: YES!');
+        break;
+    case false:
+        console.log('Loves Coding: NO');
+        break;    
 }
-console.log('===========================')
-if (student.lovesCoding === true) {
-    console.log('Loves Coding: Yes!');
-} else {
-    console.log('Loves Coding: No!');
-}
-console.log('======================================')
+console.log('======================================');
 if (student.course === 'BSIT' && student.lovesCoding === true) {
     console.log('Interested in IT and Coding');
 }
 
-console.log('===============LANGUAGES====================')
+console.log('===============LANGUAGES====================');
 
 console.log('Programming Languages:' );
 
 for (let i = 0; i < programmingLanguages.length; i++){
     console.log(programmingLanguages[i]);
 }
-console.log('======STUDENT GRADE SUBJECTS==========')
+console.log('======STUDENT GRADE SUBJECTS==========');
 
 console.log('Subject MATHEMATICS: ' + student.mathematics);
 console.log('Subject PROGRAMMING: ' + student.programming);

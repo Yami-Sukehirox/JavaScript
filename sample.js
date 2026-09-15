@@ -1,10 +1,11 @@
-let math = 90;
-let failed = 74;
+let lovesCoding = true;
 
-const studentGrade = math >= failed;
-
-if (studentGrade) {
-    console.log('Nice Job!')
-} else {
-    console.log('Bawi Next Time!');
+switch (lovesCoding) {
+    case true:
+        console.log('Loves Coding: YES!');
+        break;
+    case false:
+        console.log('Loves Coding: NO');
+        break;
 }
+

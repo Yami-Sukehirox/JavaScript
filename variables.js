@@ -190,3 +190,17 @@ if (canBuyorNahh) {
 } else {
     console.log('You have no money'); 
 } // It will display Enjoy your food
+
+/*14. switch statement*/
+
+let job = 'Software Developer';
+
+switch (jog) {
+    case 'Software Developer':
+        console.log('Writes Code');
+        break;
+
+    case 'Software Engineer':
+        console.log('Maintain the Software');
+        break;    
+}        
