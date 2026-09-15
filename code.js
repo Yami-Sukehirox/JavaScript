@@ -38,7 +38,7 @@ function showStudentInfo() {
       console.log("You are not a student");
   }
 
-  console.log("===========================");
+  console.log("============================");
   switch (student.lovesCoding) {
     case true:
       console.log("Loves Coding: YES!");
@@ -47,7 +47,7 @@ function showStudentInfo() {
       console.log("Loves Coding: NO");
       break;
   }
-  console.log("======================================");
+  console.log("=======================================");
   if (student.course === "BSIT" && student.lovesCoding === true) {
     console.log("Interested in IT and Coding");
   }
