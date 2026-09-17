@@ -1,20 +1,18 @@
-let user = ' LiAn_CrUspeRo_2008 ';
-console.log('======CHECK POINT=======')
-console.log(user.trim());
+let passWord = '  Dragon_2008  ';
 
+const bello = passWord.trim();
+const lowLife = bello.toLowerCase();
 
+console.log('=======STRONG PASSWORD=======\n');
 
-if (user.toLowerCase() === user.toLowerCase()
-     && user.toUpperCase() === user.toUpperCase() && user.includes('_') && 
-    user.endsWith('2008')) {
-    console.log('Status: Valid!');
+if (bello.includes('_') && lowLife.startsWith('dragon') && lowLife.endsWith('2008') ) {
+    console.log('\nPassword Status: STRONG');
 } else {
-    console.log('Status: Invalid');
-}
+    console.log('\nPassword Status: WEAK');
+} 
 
-console.log('User Name: ' + user.trim().length);
-console.log('User Name Contains Lian: ' + user.toLowerCase().includes('lian'));
-
-console.log('User contains _: ' + user.includes('_'));
-console.log('Birth Year: ' + user.trim().slice(14));
-console.log('==============================');
+console.log('PassWord: ' + bello);
+console.log('Length: ' + bello.length);
+console.log('Contains underscore: ' + lowLife.includes('_'));
+console.log('Contains Dragon: ' + lowLife.startsWith('dragon'));
+console.log('Last Character: ' + bello.slice(7));

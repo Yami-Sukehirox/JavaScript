@@ -43,3 +43,74 @@ console.log(first.replace('C', 'JavaScript')) // ==> OUTPUT will be I like JavaS
 let language = 'c,c++,JavaScript'
 console.log(language.split(',')); // ==> OUTPUT will be ['C', C++, 'JaveScript']
 
+// SAMPLE STRING PROBLEM
+// THIS IS A CHECK POINT EXAMPLE USING STRING
+let use = ' LiAn_CrUspeRo_2008 ';
+
+const cleanUser = use.trim();
+const lowerUser = cleanUser.toLowerCase();
+
+
+console.log('======CHECK POINT=======')
+console.log('User Name: ' + cleanUser);
+
+
+if (lowerUser.includes('lian') && lowerUser.includes('cruspero') &&
+    cleanUser.includes('_') && cleanUser.endsWith('2008')) {
+        console.log('User Name Valid!');
+    } else {
+        console.log('Invalid User Name:');
+    }
+
+console.log('User Name: ' + cleanUser.length);
+console.log('User Name Contains Lian: ' + lowerUser.includes('lian'));
+
+console.log('User contains _: ' + cleanUserincludes('_'));
+console.log('Birth Year: ' + cleanUser.slice(14));
+console.log('==============================');
+
+//================================================
+// THIS A EXAMPLE OF USER INVESTIGATOR
+let us = ' LiAn_CrUspeRo_2008 ';
+
+const cleanUse = user.trim();
+const lowerCase = cleanUse.toLowerCase();
+
+console.log('======USERNAME INVESTIGATOR=======\n');
+
+console.log('Username: ' + cleanUse);
+console.log('Length: ' + cleanUse.length);
+
+console.log('\nContains "Lian": ' + lowerCase.includes('lian'));
+console.log('contains "_": ' + lowerCase.includes('_'));
+
+console.log('\nFirst Character: ' + user[2]);
+console.log('Last Character: ' + lowerCase.slice(17));
+
+console.log('\nBirth Year: ' + cleanUser.slice(14));
+
+if (lowerCase.includes('lian') && cleanUser.includes('_') && lowerCase.includes('2008')) {
+    console.log('\nStatus: VALID!\n');
+} else {
+    console.log('\nStatus: INVALID');
+}
+
+// STRONG PASSWORD
+let passWord = '  Dragon_2008  ';
+
+const bello = passWord.trim();
+const lowLife = bello.toLowerCase();
+
+console.log('=======STRONG PASSWORD=======\n');
+
+if (bello.includes('_') && lowLife.startsWith('dragon') && lowLife.endsWith('2008') ) {
+    console.log('\nPassword Status: STRONG');
+} else {
+    console.log('\nPassword Status: WEAK');
+} 
+
+console.log('PassWord: ' + bello);
+console.log('Length: ' + bello.length);
+console.log('Contains underscore: ' + lowLife.includes('_'));
+console.log('Contains Dragon: ' + lowLife.startsWith('dragon'));
+console.log('Last Character: ' + bello.slice(7));
