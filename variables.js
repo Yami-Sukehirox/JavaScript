@@ -257,3 +257,117 @@ let quiz = ['math', 'english', 'science'];
 for (let subject of quiz) {
     console.log(quiz);
 }
+
+/*19. Break statements loops*/
+// for loops
+for (let idx = 0; idx == 10; x++) {
+    if (idx === 5) {
+        break;
+    }
+    console.log(idx);
+}
+
+// While loops
+let z = 0;
+while(z < 10) {
+    if (z === 5) {
+        break;
+    }
+    console.log(z);
+    z++;
+}
+
+//do while loops
+let n = 0;
+
+do {
+    if (n === 5) {
+        break;
+    }
+    console.log(z);
+    z++
+} while (n < 10);
+
+// for in loops
+
+const obj = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+
+for (let key in obj) {
+    if (key === 'c') {
+        break;
+    }
+    console.log( obj[key]);
+}
+
+// for of loops
+
+const jo = ['soft', 'space', 'exp'];
+
+for (let key of jo) {
+    if (key === exp) {
+        break;
+    }
+    console.log( jo[key]);
+}
+
+// continue loops its like skip
+// forloops
+for (let idx = 0; idx < 10; idx++) {
+    if (idx % 2 === 0) {
+        continue;
+    }
+    console.log(idx);
+}
+// while loops
+let l = 0;
+while (l < 10) {
+    l++;
+    if (l % 2 === 0) {
+        continue;
+    }
+    console.log(l);
+}
+// do while loops
+let q = 0;
+do{
+    q++;
+    if (q % 2 === 0) {
+        continue;
+    }
+    console.log(q);
+} while (q < 10);
+
+// for in loops
+const how = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+
+for (let key in how ) {
+    if ( how[key] % 2 === 0) {
+        continue;
+    }
+    console.log( how[key]  );
+}
+
+// for of loops
+const where = [1, 2, 3, 4, 5];
+
+for (let key of where) {
+    if (key % 2 === 0) {
+        continue;
+    }
+    console.log(key);
+} 
+//===========================
+function arr(num1, num2) {
+    return num1 >= num2 ? num1 : num2;
+}
+
+console.log( arr(2, 3));
+    

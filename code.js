@@ -58,29 +58,32 @@ function showStudentInfo() {
 
   let languagesIndex = 0;
   while (languagesIndex < programmingLanguages.length) {
-    console.log('Language ' + (languagesIndex + 1) + ': ' + programmingLanguages[languagesIndex]);
-   
-    languagesIndex++;
+    console.log(
+      "Language " +
+        (languagesIndex + 1) +
+        ": " +
+        programmingLanguages[languagesIndex],
+    );
 
-  } 
+    languagesIndex++;
+  }
   console.log("======STUDENT GRADE SUBJECTS==========");
 
   console.log("Subject MATHEMATICS: " + student.mathematics);
   console.log("Subject PROGRAMMING: " + student.programming);
   console.log("Subject ALGORITHM: " + student.algorithm);
 
-  const average =
-    (student.mathematics + student.programming + student.algorithm) / 3;
+  const average = (sub.mathematics + sub.programming + sub.algorithm) / 3;
 
   console.log("Average: " + average);
 
-  if (average >= 90) {
-    console.log("Status: Excellent!");
-  } else if (average >= 75) {
-    console.log("Status: Passed");
-  } else {
-    console.log("Status: Failed");
+  function grades(average) {
+    if (average >= 90) return "Status: Excellent";
+    else if (average >= 75) return "Status: Passed";
+    else return "Status: Failed";
   }
+
+  console.log(grades(average));
 
   if (average >= 90 && student.lovesCoding === true) {
     console.log("Excellent student who loves coding!");
@@ -91,6 +94,5 @@ function showStudentInfo() {
   } else {
     console.log("You are not a First Year student.");
   }
-  
 }
 showStudentInfo();
