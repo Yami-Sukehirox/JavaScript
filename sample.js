@@ -9,7 +9,7 @@
         return number;
 }
 console.log( fizzBuzz (15) );
-*/
+
 
 const sub = {
     mathematics: 99,
@@ -32,3 +32,4 @@ function grades(average) {
 }
 
 console.log ( grades (average));
+*/

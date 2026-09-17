@@ -78,9 +78,12 @@ function showStudentInfo() {
   console.log("Average: " + average);
 
   function grades(average) {
-    if (average >= 90) return "Status: Excellent";
-    else if (average >= 75) return "Status: Passed";
-    else return "Status: Failed";
+    if (average >= 90) 
+      return "Status: Excellent";
+    else if (average >= 75) 
+      return "Status: Passed";
+    else 
+      return "Status: Failed";
   }
 
   console.log(grades(average));
