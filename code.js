@@ -73,7 +73,7 @@ function showStudentInfo() {
   console.log("Subject PROGRAMMING: " + student.programming);
   console.log("Subject ALGORITHM: " + student.algorithm);
 
-  const average = (sub.mathematics + sub.programming + sub.algorithm) / 3;
+  const average = (student.mathematics + student.programming + student.algorithm) / 3;
 
   console.log("Average: " + average);
 
