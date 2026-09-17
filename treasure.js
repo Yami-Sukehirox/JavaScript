@@ -1,4 +1,4 @@
-console.log('============THE LOST TREASURE===========')
+console.log('\n============THE LOST TREASURE===========\n')
 
 const player = {
     name: 'Lian',
@@ -14,41 +14,46 @@ function showsPlayerInfo() {
     console.log('My coins: ' + player.coins);
 
 
-    console.log('==========CHOOSE YOUR PATH==========')
+    console.log('\n==========CHOOSE==========\n')
 
+    console.log('Choose your path:\n');
+    console.log('1. Cave');
+    console.log('2. Forest');
+    console.log('3. Mountain\n');
+    
     let choice = 2;
-    let heath = 56;
+    let health = 56;
 
     function checkHealth(health) {
         if (health >= 50)
-            return 'You are strong enough';
+            return 'You are strong enough\n';
         else {
-            return 'You are too weak';
+            return 'You are too weak\n';
         }
     }
 
     switch (choice) {
         case 1:
-            console.log('Foreset');
-            console.log('You entered the forest');
+            console.log('Foreset\n');
+            console.log('You entered the forest\n');
             break;
         case 2:
-            console.log('Cave');
-            console.log('You entered the cave');
+            console.log('Cave\n');
+            console.log('You entered the cave\n');
             break;
         case 3: 
-            console.log('Mountain');
-            console.log('You entered tge mountain');
+            console.log('Mountain\n');
+            console.log('You entered tge mountain\n');
             break;
         default:
-            console.log('Invalid Path');    
+            console.log('Invalid Path\n');    
     }
 
     console.log(checkHealth(health));
 
-    console.log('=========FIND THE KEY========');
+    console.log('=========YOU FOUND SOME ITEMS========\n');
 
-    let items = ['coin', 'potion', 'key', 'map'];
+    let items = ['coin ', 'potion ', 'key ', 'map '];
 
     for (let item of items) {
 
@@ -60,6 +65,28 @@ function showsPlayerInfo() {
     const stopPart = items.slice(1);
 
     console.log(` Items: ${stopPart} ` )
+
+    console.log('\n=======FIND THE TREASURE==========');
+
+   let treasure = {
+        location: 'cave',
+        coins: 100,
+        guarded: true
+   };
+
+   for (let wow in treasure) {
+    
+        console.log(treasure[wow]);
+        
+   }
+
+        if (treasure.guarded) {
+            console.log('\nThe treasure is guarded!');
+        } else {
+            console.log('Take the treasure');
+        }
+   
+    
 
 
 
