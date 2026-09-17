@@ -42,3 +42,4 @@ console.log(first.replace('C', 'JavaScript')) // ==> OUTPUT will be I like JavaS
 // ==> split() ==> turns a string into a array
 let language = 'c,c++,JavaScript'
 console.log(language.split(',')); // ==> OUTPUT will be ['C', C++, 'JaveScript']
+
