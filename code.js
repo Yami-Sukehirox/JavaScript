@@ -60,8 +60,7 @@ function showStudentInfo() {
   while (languagesIndex < programmingLanguages.length) {
     console.log(
       "Language " +
-        (languagesIndex + 1) +
-        ": " +
+        (languagesIndex + 1) + ": " +
         programmingLanguages[languagesIndex],
     );
 

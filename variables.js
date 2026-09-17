@@ -406,4 +406,45 @@ function grades(average) {
 }
 
 console.log ( grades (average));
-//========================================================
+//=======================================================
+
+function displayEvenNumbers(array) {
+    for (const number of array) {
+        if (number % 2 != 0) 
+            console.log(number);
+    }
+}
+displayEvenNumbers([1,2,3,4,5,6,7,8,9,10,]);
+
+// Behavior
+
+const dog = {
+    name: 'lian',
+    age: 3,
+    weigHt: 12,
+    breed: 'askal',
+    eat: function() {
+        console.log('chomp!');
+    },
+    bark() {
+        console.log('woof');
+    }
+}
+
+function getCat(name, weight, age, breed) {
+    return {
+        name,
+        weight,
+        age,
+        breed,
+        eat() {
+            console.log('meow');
+        },
+        bark() {
+            console.log('hahaha');
+        }   
+    }
+}
+
+const anotherCat = getCat ('Mary', 23, 18, 'cutecute');
+console.log(anotherCat);
