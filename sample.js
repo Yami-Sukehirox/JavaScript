@@ -1,21 +1,28 @@
-let elements = [
-    'potion',
-    'sword',
-    'potion', 
-    'shield',
-    'potion',
-    'bow',
-    'potion'
+
+let treasure = [
+    'Sword',
+    'Potion',
+    'Shield',
+    'Bow'
 ];
 
-function countpotion(elements) {
-    let me = 0;
+function checkItem(treasure, item) {
+    let yes = false;
 
-    for (let hays of elements) {
-        if (hays === 'potion') {
-            me++;
+    for (let mine of treasure) {
+        if (mine === item) {
+            yes = true;
         }
     }
-    return me;
+
+    if (yes) {
+        console.log('ITem found');  
+    } else {
+        console.log('Item not found');
+    }
 }
-console.log(countpotion(elements));
+    
+
+
+console.log(checkItem(treasure, 'Sword'));
+console.log(checkItem(treasure, 'wand'));
