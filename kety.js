@@ -209,3 +209,49 @@ for (let lastname of lastName) {
         console.log('lastname found!');
     } 
 }
+//===================================
+let numero = [10, 90, 44,];
+let count = 0;
+
+for (let num of numero) {
+    if (num >= 10 ) {       //It wiil display 3
+        count++;
+    }
+}
+console.log(count);
+//=========================================
+let keys = ['Lian', 'Angelo', 'Lian', 'Cruspero'];
+let way = 0;
+
+for (let yawi of keys) {
+    if(yawi === 'Lian') {   // It will display 2
+        way++;
+    }
+}
+console.log(way);
+
+// Array + Loop + function
+// THE OUTPUT WILL BE ====> 4
+let elements = [
+    'potion',
+    'sword',
+    'potion', 
+    'shield',
+    'potion',
+    'bow',
+    'potion'
+];
+
+function countpotion(elements) {
+    let me = 0;
+
+    for (let hays of elements) {
+        if (hays === 'potion') {
+            me++;
+        }
+    }
+    return me;
+}
+console.log(countpotion(elements));
+
+
