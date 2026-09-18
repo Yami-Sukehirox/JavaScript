@@ -193,3 +193,19 @@ if (inventor.includes('Potion')) {
 let kinds = ['Potion', 'Sword', 'Shiled', 'Bow'];
 
 console.log(kinds.indexOf('Sword'));
+
+// The for of loop + arrays
+let names = ['lian', 'lai', 'leester'];
+
+for (let name of names) {
+    console.log(name);
+} 
+//================================
+let lastName = ['Cruspero', 'Hinaut', 'Booc'];
+
+for (let lastname of lastName) {
+
+    if (lastname === 'Hinaut') {
+        console.log('lastname found!');
+    } 
+}
