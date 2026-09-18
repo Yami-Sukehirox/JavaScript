@@ -87,9 +87,9 @@ console.log('contains "_": ' + lowerCase.includes('_'));
 console.log('\nFirst Character: ' + user[2]);
 console.log('Last Character: ' + lowerCase.slice(17));
 
-console.log('\nBirth Year: ' + cleanUser.slice(14));
+console.log('\nBirth Year: ' + cleanUse.slice(14));
 
-if (lowerCase.includes('lian') && cleanUser.includes('_') && lowerCase.includes('2008')) {
+if (lowerCase.includes('lian') && cleanUse.includes('_') && lowerCase.includes('2008')) {
     console.log('\nStatus: VALID!\n');
 } else {
     console.log('\nStatus: INVALID');
@@ -114,3 +114,82 @@ console.log('Length: ' + bello.length);
 console.log('Contains underscore: ' + lowLife.includes('_'));
 console.log('Contains Dragon: ' + lowLife.startsWith('dragon'));
 console.log('Last Character: ' + bello.slice(7));
+
+
+let usernamer = ' LiAn_CrUsPeRo_2008 ';
+
+const userr = usernamer.trim();
+const userrser = user.toLowerCase();
+
+console.log('=========USERNAME VALIDATOR=======\n');
+
+console.log('Username: ' + user);
+console.log('Length: ' + user.length);
+
+console.log('\nContains Lian: ' + lowerCase.startsWith('lian'));
+console.log('Constains underscore: ' + lowerCase.includes('_'));
+console.log('Ends with year: ' + user.slice(14));
+
+if (lowerCase.includes('_') && 
+    lowerCase.startsWith('lian') &&
+    lowerCase.endsWith('2008') &&
+    lowerCase.length >= 15) {
+        console.log('\nStatus: VALID!');
+    } else {
+        console.log('\nStatus: INVALID');
+    }
+
+// DAY 5 ARRAYS
+
+let languages = [
+    'C',
+    'Java',
+    'Python'            //changing the variables
+];
+
+console.log([languages[0], languages[1]='JavaScript', languages[3]='C++']);
+
+// USING PUSH() ==> push() put some new items
+let games = ['Minecraft', 'Roblox'];
+
+games.push('Mobile legends');
+
+console.log(games);
+//=====================================================================
+let subjects = ['Programming', 'Mathematics',];
+
+subjects.push('English', 'Science', 'Database');
+
+console.log(subjects);
+
+//USING POP() ===> It removes the last item
+
+let items = ['Sword', 'Shield', 'Potion', 'Bow'];
+
+items.pop();
+
+console.log(items);
+console.log(items.length); 
+//===============================================
+//unshift ==> adds item in the beginnig
+//shift ==> removes the first item
+let inventory = ['Potion', 'Sword', 'Shield'];
+
+inventory.unshift('Bow');
+inventory.pop();
+console.log(inventory);
+console.log(inventory.length);
+
+// COMBINE ARRAYS AND CONDTION
+let inventor = ['Potion', 'Sword', 'Shield'];
+
+if (inventor.includes('Potion')) {
+    console.log('Items Found');
+} else {
+    console.log('Item not found');
+}
+
+// indexOf ==> you want to knnow where is it
+let kinds = ['Potion', 'Sword', 'Shiled', 'Bow'];
+
+console.log(kinds.indexOf('Sword'));
