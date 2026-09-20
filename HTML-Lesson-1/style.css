@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: gray;
+    background: url("min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+body::before {
+    content:"";
+    position: absolute;
+    width: 600px;
+    height: 500px;
+
+
+background:linear-gradient(45deg,#f3ef06,#e6f10c); 
+    filter: blur(120PX);
+    animation:move 8s infinite alternate;
+
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); 
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+@keyframes move{
+    from{
+        transform: translate(-200px, -100px);
+    }
+    to{
+        transform: translate(200px, 100px);
+    }
+}
+
+.calculator{
+    position: relative;
+    width: 360px;
+    padding: 25px;
+    border-radius: 50px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    animation: appear 1s ease;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-title {
+    color: rgb(56, 53, 53);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.github-title i {
+    font-size: 45px;
+}
+@keyframes appear {
+    from{
+        transform:scale(.5);
+        opacity: 0;
+    }
+    to{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+.display {
+    height: 90px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(0,0,0,4);
+    box-shadow: none;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px white;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button{
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(20, 19, 19);
+    font-size: 22px;
+}
+button:hover {
+    background-color: rgb(244, 248, 24);
+    color: black;
+    box-shadow: 0 16px 16px 0 rgba(44, 44, 206, 0.6)
+}
+
+.equal{
+    grid-column: span 2;
+}
+
+
