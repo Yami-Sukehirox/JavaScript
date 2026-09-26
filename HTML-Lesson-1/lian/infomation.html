@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Service</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+    <!-- This checkbox controls the slide -->
+    <input type="checkbox" id="next-page">
+
+    <div class="main-container">
+
+        <!-- =========================
+             PAGE 1 - CUSTOMER INFORMATION
+             ========================= -->
+        <section class="form-page customer-page">
+
+            <div class="form-box">
+
+                <h1>Repair Service</h1>
+                <p class="step">Step 1 of 2</p>
+
+                <h2>Customer Information</h2>
+
+                <form>
+
+                    <label for="customerID">Customer ID</label>
+                    <input
+                        type="text"
+                        id="customerID"
+                        placeholder="Example: C001"
+                        required
+                    >
+
+                    <label for="customerName">Customer Name</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        required
+                    >
+
+                    <label for="contact">Contact Number</label>
+                    <input
+                        type="tel"
+                        id="contact"
+                        placeholder="09XXXXXXXXX"
+                        required
+                    >
+
+                    <!-- CSS-only Next button -->
+                    <label for="next-page" class="next-button">
+                        Next →
+                    </label>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PAGE 2 - DEVICE INFORMATION
+             ========================= -->
+        <section class="form-page device-page">
+
+    <div class="form-box">
+
+        <h1>Repair Service</h1>
+        <p class="step">Step 2 of 2</p>
+
+        <h2>Device Information</h2>
+
+        <form>
+
+            <label for="device">Device Type</label>
+
+            <select id="device">
+                <option value="">-- Select Device --</option>
+                <option>Laptop</option>
+                <option>Desktop Computer</option>
+                <option>Smartphone</option>
+                <option>Tablet</option>
+                <option>Printer</option>
+            </select>
+
+            <label>Preferred Service</label>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="service">
+                    Device Diagnosis
+                </label>
+
+                <label>
+                    <input type="radio" name="service">
+                    Hardware Repair
+                </label>
+
+                <label>
+                    <input type="radio" name="service">
+                    Software Repair
+                </label>
+            </div>
+
+            <label>Service Priority</label>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="priority">
+                    Normal
+                </label>
+
+                <label>
+                    <input type="radio" name="priority">
+                    Urgent
+                </label>
+
+                <label>
+                    <input type="radio" name="priority">
+                    Emergency
+                </label>
+            </div>
+
+            <label>Additional Services</label>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox">
+                    Device Cleaning
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Data Backup
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Software Installation
+                </label>
+            </div>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date">
+
+            <label for="problem">Problem Description</label>
+
+            <textarea
+                id="problem"
+                rows="5"
+                placeholder="Describe the problem..."
+            ></textarea>
+
+            <div class="buttons">
+
+                <label for="next-page" class="back-button">
+                    ← Back
+                </label>
+
+                <button type="submit" class="submit-button">
+                    Submit
+                </button>
+
+                <button type="reset" class="reset-button">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- DATA TABLE IS HERE -->
+        <div class="table-section">
+
+            <h2>Repair Service Data Table</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Device</th>
+                            <th>Service</th>
+                            <th>Priority</th>
+                            <th>Additional Services</th>
+                            <th>Date</th>
+                            <th>Problem</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>C001</td>
+                            <td>Juan Dela Cruz</td>
+                            <td>juan@gmail.com</td>
+                            <td>09123456789</td>
+                            <td>Laptop</td>
+                            <td>Hardware Repair</td>
+                            <td>Urgent</td>
+                            <td>Cleaning</td>
+                            <td>09/30/2026</td>
+                            <td>Won't turn on</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Information</title>
+    <link rel="stylesheet" href="st.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="page">
+        <div class="form-card">
+          <h1>Repair Service</h1>
+          <p class="step">Step 1 of 2 — Customer Information</p>
+
+          <form action="device.html">
+            <label for="customerID">Customer ID</label>
+            <input
+              type="text"
+              id="customerID"
+              name="customerID"
+              placeholder="Example: C001"
+              required
+            />
+
+            <label for="customerName">Customer Name</label>
+            <input
+              type="text"
+              id="customerName"
+              name="customerName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+
+            <label for="contact">Contact Number</label>
+            <input
+              type="tel"
+              id="contact"
+              name="contact"
+              placeholder="09XXXXXXXXX"
+              required
+            />
+
+            <button type="submit" class="next-button">Next →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

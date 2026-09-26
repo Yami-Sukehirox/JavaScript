@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Information</title>
+    <link rel="stylesheet" href="st.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="form-card">
+        <h1>Repair Service</h1>
+        <p class="step">Step 2 of 2 — Device Information</p>
+
+        <form>
+          <label for="device">Device Type</label>
+
+          <select id="device" name="device">
+            <option value="">-- Select Device --</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option>
+            <option value="phone">Smartphone</option>
+            <option value="tablet">Tablet</option>
+            <option value="printer">Printer</option>
+          </select>
+
+          <label>Preferred Service</label>
+
+          <div class="options">
+            <label>
+              <input type="radio" name="service" value="diagnosis" />Device
+              Diagnosis
+            </label>
+
+            <label>
+              <input type="radio" name="service" value="repair" />
+              Hardware Repair
+            </label>
+
+            <label>
+              <input type="radio" name="service" value="software" />
+              Software Repair
+            </label>
+          </div>
+
+          <label>Service Priority</label>
+
+          <div class="options">
+            <label>
+              <input type="radio" name="priority" value="normal" />
+              Normal
+            </label>
+
+            <label>
+              <input type="radio" name="priority" value="urgent" />
+              Urgent
+            </label>
+
+            <label>
+              <input type="radio" name="priority" value="emergency" />
+              Emergency
+            </label>
+          </div>
+
+          <label>Additional Services</label>
+
+          <div class="options">
+            <label>
+              <input type="checkbox" name="cleaning" />
+              Device Cleaning
+            </label>
+
+            <label>
+              <input type="checkbox" name="backup" />
+              Data Backup
+            </label>
+
+            <label>
+              <input type="checkbox" name="installation" />
+              Software Installation
+            </label>
+          </div>
+
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="problem">Problem Description</label>
+
+          <textarea
+            id="problem"
+            name="problem"
+            placeholder="Describe the problem with your device..."
+            rows="5"
+          ></textarea>
+
+          <div class="buttons">
+            <a href="index.html" class="back-button"> ← Back </a>
+
+            <button type="submit" class="submit-button">Submit</button>
+
+            <button type="reset" class="reset-button">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <table></table>    
+
+
+
+
+  </body>
+</html>

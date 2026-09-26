@@ -449,6 +449,10 @@ function getCat(name, weight, age, breed) {
 const anotherCat = getCat ('Mary', 23, 18, 'cutecute');
 console.log(anotherCat);
 
+// DAY 10
+// DOM MANIPULATION
+
+
 
 
 

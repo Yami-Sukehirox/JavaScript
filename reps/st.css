@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f5;
+  background: url("im.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.form-card {
+  width: 500px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  background: transparent;
+
+  /* Slide/fade animation */
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #fbfeff;
+}
+
+.step {
+  text-align: center;
+  color: #f70404;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label {
+  font-weight: bold;
+  margin-bottom: 7px;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.options label {
+  font-weight: normal;
+}
+
+.options input {
+  margin-right: 7px;
+}
+
+button,
+.back-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.next-button {
+  margin-top: 25px;
+  background: #263238;
+  color: white;
+}
+
+.next-button:hover {
+  background: #455a64;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.back-button {
+  background: #ddd;
+  color: #333;
+}
+
+.submit-button {
+  background: #263238;
+  color: white;
+}
+
+.reset-button {
+  background: #eee;
+  color: #333;
+}
+
+button:hover,
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.form-card {
+  backdrop-filter: blur(20px);
+}

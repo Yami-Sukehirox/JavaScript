@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lian.css">
+</head>
+<body>
+    
+        <input type="checkbox" id="next-page">
+
+    <div class="main-container">
+
+        <section class="form-page customer-page">
+
+            <div class="form-box">
+                <h1>TechCare Service Center</h1>
+                <p class="step">Step 1 of 2</p>
+
+                <h2>Customer Information</h2>
+
+                <form>
+
+                    <label for="customerID">Customer ID</label>
+                    <input type="text" id="customerID" placeholder="Exmaple: 0001" required>
+
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="CustomerName" placeholder="Enter you name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" id="contactNumber" placeholder="09xxxxxxxx" required>
+
+                    <label for="next-page" class="next-button">NEXT</label>
+
+
+                </form>
+            </div>
+        
+
+        </section>
+        
+        <section class="form-page device-page">
+            <div class="form-box">
+               <h1>TechCare Service Center</h1>
+               <p class="step">Step 2 of 2</p>
+
+               <h2>Device Information</h2>
+
+                <form>
+                    <label for="device">Device Selection</label>
+
+                    <select id="device">
+                        <option class="">-- Device Selection --</option>
+                        <option>Computer</option>
+                        <option>Smartphone</option>
+                        <option>Laptop</option>
+                        <option>printer</option>
+                        <option>Tablet</option>
+                        <option>monitor</option>
+                        <option>keyboard</option>
+                    </select>
+
+                    <label>Preferred Service</label>
+
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="service">
+                            Software Repair
+                        </label>
+
+                        <label>
+                            <input type="radio" name="service">
+                            Data Recovery
+                        </label>
+
+                        <label>
+                            <input type="radio" name="service">
+                            Hardware Repair
+                        </label>
+
+                        <label> 
+                            <input type="radio" name="service">
+                            Virus Remover
+                        </label>
+
+
+                        <label >
+                            <input type="radio" name="service">
+                            Device Diagnosis
+                        </label>
+
+                    </div>
+
+                    <label>Service Priority</label>
+                    
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="priority">
+                            Normal
+                        </label>
+
+                        <label>
+                            <input type="radio" name="priority">
+                            High
+                        </label>
+
+                        <label>
+                        <input type="radio" name="priority">
+                            Urgent
+                        </label>
+
+                        <label>
+                            <input type="radio" name="priority">
+                            Emergency
+                        </label>                   
+                    </div>
+
+                    <label>Addtional Services</label>
+
+                    <div class="options">
+                        <label> 
+                            <input type="checkbox" name="Addtional"> 
+                            Device Cleaning
+                        </label>
+
+                        <label >
+                            <input type="checkbox" name="Additional">
+                            Data Backup
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="Additional">
+                            System Setup
+                        </label>
+
+                        <label >
+                            <input type="checkbox" name="Additional">
+                            Network/Wi-Fi Setup
+                        </label>
+
+                        <label> 
+                            <input type="checkbox" name="Additional">
+                            Driver Installation
+                        </label>
+                    </div>
+
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date">
+
+                    <label for="problem">Problem Description</label>
+
+                    <textarea id="problem" rows="5" placeholder="Describe the problem"></textarea>
+
+                    <div class="buttons">
+                        <label for="next-page" class="back-button">back</label>
+
+                        <button type="submit" class="submit-button">Submit</button>
+
+                        <button type="reset" class="reset-button">Reset</button>
+                    </div>
+
+                </form>
+
+                <div class="table-section">
+
+                    <h2>Repair Service Data Table</h2>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer ID</th>
+                                    <th>Customer Name</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Device</th>
+                                    <th>Service</th>
+                                    <th>Priority</th>
+                                    <th>Addtional Services</th>
+                                    <th>Date</th>
+                                    <th>Problem</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>Lian Angelo</td>
+                                    <td>Tenz@gmail.com</td>
+                                    <td>0915342678</td>
+                                    <td>Laptop</td>
+                                    <td>Hardware Repair</td>
+                                    <td>Emergency</td>
+                                    <td>Cleaning</td>
+                                    <td>11/24/2026</td>
+                                    <td>LCD</td>
+                                </tr>
+
+                                <tr>
+                                    <td>0002</td>
+                                    <td>Mary Alwen</td>
+                                    <td>Alwenyaa@gmail.com</td>
+                                    <td>095465235</td>
+                                    <td>Tablet</td>
+                                    <td>Virus Remover</td>
+                                    <td>Urgent</td>
+                                    <td>Device Cleaning</td>
+                                    <td>10/12/2026</td>
+                                    <td>Virus</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+    
+
+
+</body>
+</html>
+ 
+    
